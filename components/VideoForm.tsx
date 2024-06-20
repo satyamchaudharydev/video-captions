@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 const VideoForm = () => {
   const [videoUrl, setVideoUrl] = useState('');
   const [captions, setCaptions] = useState('');
+  const [color, setColor] = useState('#ffffff');
 
   return (
     <form className="space-y-4 max-w-4xl">
@@ -31,7 +32,7 @@ const VideoForm = () => {
           className='p-3 border-border rounded-md border'>
 
      
-          <div >
+          <div>
             <label htmlFor="captions" className="block text-sm font-medium text-white">
               Captions (WebVTT format):
             </label>
@@ -43,8 +44,20 @@ const VideoForm = () => {
               rows={3}
               placeholder="Enter captions in WebVTT format"
             />
+             <div className="mt-[6px]">
+              <label className="text-[14px] text-[#ddddddab]">Change Color of captions: </label>
+              <input
+                type="color"
+                id="color"
+                name="color"
+                value={color}
+                onChange={(e) => setColor(e.target.value)}
+              />
+            </div>
           </div>
-          <VideoPlayer videoUrl={videoUrl} captions={captions} />
+          <VideoPlayer videoUrl={videoUrl} captions={captions} cueConfig={{
+            color: color
+          }} />
           </motion.div>
         )
       }

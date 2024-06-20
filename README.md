@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Video with Captions App
+
+This is a simple Next.js application that allows users to input a video URL and captions in WebVTT format. The application then displays the video with the provided captions.
+
+## Features
+
+- Input a video URL
+- Input captions in WebVTT format
+- Display video with captions
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-rendered or statically exported React applications.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+
+### Future Enhancements
+
+Due to time constraints, the current implementation is limited to basic functionality. However, if this were to be developed into a full-fledged application, several advanced features could be added to enhance the user experience:
+
+1. **Advanced Caption Editor:** 
+   - Users could have the ability to align captions, change fonts, styles, and sizes, and preview changes in real-time.
+   - An interactive timeline editor would allow users to easily add, edit, and delete captions at specific timestamps.
+   - Support for importing and exporting captions in various formats, such as SRT, VTT, and more.
+
+2. **Multi-language Support:** 
+   - Support for multiple caption tracks in different languages, allowing users to switch between them seamlessly.
+
+3. **Backend Integration:**
+   - A backend service to store and retrieve captions, allowing users to save their progress and collaborate with others.
+   - User authentication and profile management for personalized experiences.
+
+4. **Responsive Design:**
+   - Ensure the application is fully responsive, providing a smooth experience across various devices and screen sizes.
+
+6. **Performance Optimization:**
+   - Efficient handling of large video files and captions to ensure smooth playback and editing.
+
+These enhancements would make the application more robust, user-friendly, and versatile, providing a comprehensive tool for adding and editing video captions.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have Node.js and npm installed on your system.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/satyamchaudharydev/video-captions.git
+   cd video-captions
