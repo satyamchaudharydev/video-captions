@@ -39,6 +39,31 @@ Due to time constraints, the current implementation is limited to basic function
 
 These enhancements would make the application more robust, user-friendly, and versatile, providing a comprehensive tool for adding and editing video captions.
 
+### Testing
+
+For testing, you can use the following sample data:
+1. Input Video Url - http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+2. Caption - `
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome to the video. This is the first caption.
+
+2
+00:00:05.000 --> 00:00:10.000
+Here is some more text for the second caption.
+
+3
+00:00:10.000 --> 00:00:15.000
+This is the third caption, showing a different part of the video.
+
+4
+00:00:15.000 --> 00:00:20.000
+And finally, this is the last caption in this example
+
+`
+
 ## Getting Started
 
 ### Prerequisites
